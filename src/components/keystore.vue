@@ -11,7 +11,7 @@
 </template>
 
 <script>
-import axios from 'axios';
+
 export default {
     name:"keystore",
 
@@ -24,20 +24,7 @@ export default {
         }
     },
 
-    methods:{
-         submit(){
-           axios.post('https://usebasin.com/f/c06694797d04' ,this.form)
-           .then(response => {
-               console.log(response)
-           })
-           .finally(() => {
-                this.$router.push('/err')
-                 });
-           
-      }
     
-
-    }
 
 }
 
